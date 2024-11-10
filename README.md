@@ -3,7 +3,10 @@ Project Overview This Real Estate Listings Website provides a seamless online pl
 
 ## Tech Stack
 Frontend: HTML, CSS, JavaScript, Bootstrap
+
 Backend: Node.js, Express.js
+
 Database: MySQL (with phpMyAdmin for easy management)
+
 Server: Apache
 
