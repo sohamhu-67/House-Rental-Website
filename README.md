@@ -10,3 +10,4 @@ Database: MySQL (with phpMyAdmin for easy management)
 
 Server: Apache
 
+![image](https://github.com/user-attachments/assets/fa936402-808c-42bf-bdeb-04946bd48c15)
