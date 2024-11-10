@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= TittleWB %>
+    </title>
+    <%- include('../partials/depend.ejs'); %>
+</head>
+
+<body>
+    <%- include('../partials/navbar.ejs'); %>
+    <div class="table-final">
+        <table border="1" width="100%">
+            <tr>
+                <th>Agent Name</th>
+                <th>Mobile No.</th>
+                <th>Location</th>
+                <th>Rating</th>
+            </tr>
+            <% if (agentdata.length === 0) { %>
+                <tr>
+                    <td colspan="4">No agents found.</td>
+                </tr>
+            <% } else { %>
+                <% for (var i = 0; i < agentdata.length; i++) { %>
+                    <tr>
+                        <td><%- agentdata[i].NAME %></td>
+                        <td><%- agentdata[i].mobile_no %></td>
+                        <td><%- agentdata[i].location %></td>
+                        <td><%- agentdata[i].ratings %></td>
+                    </tr>
+                <% } %>
+            <% } %>
+        </table>
+        <a href="/agentlist">Go back to home</a>
+        <%- include("../partials/footbar.ejs") %>
+    </div>
+    

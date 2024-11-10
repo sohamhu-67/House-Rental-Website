@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= TittleWB %>
+    </title>
+    <%- include('../partials/depend.ejs'); %>
+</head>
+
+<body>
+    <%- include('../partials/navbar.ejs'); %>
+    <div class="table-final">
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Property Type</th>
+                    <th>Square Feet</th>
+                    <th>Loanable</th>
+                    <th>Time Period</th>
+                    <th>Place</th>
+                    <th>Owner's Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% properties.forEach(property => { %>
+                    <tr>
+                        <td><%= property.property_type %></td>
+                        <td><%= property.square_feet %></td>
+                        <td><%= property.loanable %></td>
+                        <td><%= property.time_period %> years</td>
+                        <td><%= property.place %></td>
+                        <td><%= property.owner_phone_number %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+        <a href="/">Go back to home</a>
+        <%- include("../partials/footbar.ejs") %>
+    </div>
+</body>
+</html>

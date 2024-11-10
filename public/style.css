@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: #ffffff;
+    justify-content: space-between;
+    padding-left: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+.logo{
+    font-size: 2.5vw;
+    font-weight: 700;
+    text-decoration: none;
+    color: #002845;
+    font-family: 'Oswald';
+
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.sec-nav{
+    gap: 20px;
+    margin-right: 40px;
+}
+.sec-nav a{
+    font-family: 'Oswald';
+    color: black;
+    text-decoration: none;
+}
+.sec-nav a:hover{
+    color: #F3986D;
+}
+.sec-nav i{
+    font-size: 1.6vw;
+    display: none;
+}
+.part-1{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+}
+.part1-left{
+    width: 55%;
+    height: 100%;
+}
+.part1-right{
+    width: 45%;
+    height: 100%;
+}
+.part1-right img{
+    padding-top: 3vw;
+    width: 100%;   /* Make the image take up the full width of the container */
+    height: 100%;  /* Maintain aspect ratio */
+    object-fit: cover;  /* Ensure the image covers the area without distortion */
+
+}
+.part1-left h1{
+    font-size: 5vw;
+    padding-left: 5vw;
+    font-family: 'Oswald';
+}
+.box {
+    height: 100px;
+    width: 650px;
+    background-color: white;
+    z-index: 999;
+    position: absolute;  /* Use absolute to keep it inside the parent container */
+    bottom: 59px;  /* Adjust bottom to position the box at the bottom of the section */
+    left: 50%;
+    transform: translateX(-50%);  /* Center the box horizontally */
+    border-radius: 15px;
+    box-shadow: 0 4px 13px rgba(0, 0, 0, 0.25); 
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding: 0 35px;
+    font-family: 'Oswald';
+}
+
+
+
+.part-2{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.part2-top{
+    height: 40vh;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Oswald';
+
+}
+.part2-bot {
+    height: auto; /* Allow content to determine height */
+    display: grid;  /* Use CSS Grid for layout */
+    grid-template-columns: repeat(2, 1fr);  /* Create two columns */
+    grid-template-rows: repeat(2, auto);  /* Create two rows */
+    gap: 20px;  /* Add space between boxes */
+    justify-content: center;  /* Horizontally center the grid */
+    align-items: center;  /* Vertically center the grid */
+    width: auto;  /* Adjust width based on content */
+    padding: 20px;  /* Add padding around the grid */
+}
+.mini-box {
+    text-decoration: none; 
+    color: inherit;
+    height: 100px;
+    width: 500px;  /* Adjusted width to make layout fit better */
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;  /* Center content inside the box */
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 13px rgba(0, 0, 0, 0.15); 
+    transition: 0.4s;
+    flex-direction: column;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    
+}
+
+.mini-box a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.mini-box:hover{
+    background-color: rgba(139, 134, 134, 0.129);
+}
+.prop1 {
+    margin-top: 100px;
+    height: 100vh;
+    width: 100%;
+    background-image: url('img/web_background_default.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prop1-top {
+    height: auto;
+    width: 500px;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+.prop1-top img{
+    margin-left: 90px;
+    width: 60%;   /* Make the image take up the full width of the container */
+    height: 50%;  /* Maintain aspect ratio */
+    object-fit: cover;  /* Ensure the image covers the area without distortion */
+
+}
+
+.formProp {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  /* Reduced space between each form group */
+}
+
+.mini-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;  /* Reduced space between label and input */
+}
+
+.mini-form label {
+    font-size: 14px;  /* Smaller font size for labels */
+    font-weight: bold;
+    color: #333;
+    width: 120px;  /* Smaller fixed width for labels */
+}
+
+.mini-form input {
+    flex: 1;
+    padding: 6px;  /* Reduced padding inside input fields */
+    font-size: 12px;  /* Smaller font size for input text */
+    border: 1px solid #ccc;
+    border-radius: 6px;  /* Smaller border-radius */
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.mini-form input:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+/* Submit Button Styling */
+.submit-btn {
+    padding: 8px 16px;  /* Reduced padding for the button */
+    font-size: 14px;  /* Smaller font size */
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 6px;  /* Smaller border-radius for button */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);  /* Slight lift on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .prop1-top {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+.foot{
+    height: 90vh;
+    width: 100%;
+    flex-direction: column;
+    background-color: #002845;
+}
+.foot-top{
+    height: 30%;
+    width: 100%;
+}
+.foot-top-left{
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    padding-top: 10px;
+}
+.foot-top-right{
+    height: 100%;
+    width: 50%;
+
+}
+.white-line {
+    border: none;
+    border-top: 0.4px solid white; /* Adjust thickness as needed */
+    width: 60%; /* Full width, adjust as needed */
+    margin: 10px 0; /* Adjust space around the line */
+  }
+  
+.foot-med{
+    height: 40%;
+    width: 100%;
+}
+.foot-med-left{
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+
+}
+.foot-med-right{
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Oswald';
+    padding-top: 5px;
+}
+.foot-med-right h1{
+    color: #CCD4D5;
+}
+.foot-med-right a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.foot-med-right a:hover{
+    color: #CCD4D5;
+}
+.foot-bot{
+    height: 30%;
+    width: 100%;
+}
+.foot-bot-left{
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    padding-left: 320px;
+    padding-top: 20px;
+}
+.foot-bot-left h1{
+    color: #FFFFFF; 
+    font-size: 17px;
+}
+.foot-bot-left h1:hover{
+    color: #CCD4D5;
+    cursor: pointer;
+}
+.foot-bot-right{
+    height: 100%;
+    width: 50%;
+
+}
+.agentmain{
+    background-image: url('img/web_background_default.png');
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.agentfrom{
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+   height: 400px;
+   width: 400px;
+   padding-top: 80px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.agentfrom input{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.agentfrom h1{
+    margin-left: 20px;
+}
+.agentfrom button{
+    margin-top: 100px;
+}
+.table-final{
+    
+    height: 100vh;
+    width: 100%;
+    margin-top: 100px;
+}

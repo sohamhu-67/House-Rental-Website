@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= TittleWB %>
+    </title>
+    <%- include('../partials/depend.ejs'); %>
+</head>
+<body>
+    <%- include('../partials/navbar.ejs'); %>
+    <div class="agentmain flex">
+        <div class="agentfrom">
+            <form action="/agentlist" method="post">
+                <h1>Choose Location</h1>
+                <label for="Location"></label>
+                <input list="locations" id="Location" name="Location" placeholder="Location">
+                <datalist id="locations">
+                    <option value="All">
+                    <option value="Kolkata">
+                    <option value="Durgapur">
+                    <option value="Asansol">
+                    <option value="Siliguri">
+                </datalist>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+    
+        </div>    
+    </div>
+    <%- include("../partials/footbar.ejs") %>
+</body>
+</html>

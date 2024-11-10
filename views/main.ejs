@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= TittleWB %>
+    </title>
+    <%- include('../partials/depend.ejs'); %>
+</head>
+<body>
+    <%- include('../partials/navbar.ejs'); %>
+        <section class="part-1">
+        <div class="part1-left flex">
+            <h1>Service<br> you can <span style="color:#F3986D;">rely</span> on.</h1>
+            <a href=""></a>
+        </div>
+        <div class="part1-right flex">
+            <img src="/img/pin.png" alt="" srcset="">
+        </div>
+    
+        <!-- Moved the box inside the part-1 section but outside left/right containers -->
+        <div class="box flex">
+            <h2><span style="font-size: 30px;">100</span>+ Agents</h2>
+            <h2><span style="font-size: 30px;">4000</span>+ Customers</h2>
+            <h2><span style="font-size: 30px;">4.9</span> Rating</h2>
+        </div>
+    </section>
+        <section class="part-2">
+            <div class="part2-top flex">
+                <h1 style="padding-top: 100px;  font-size: 40px;">Get help today</h1>
+            </div>
+
+            <div class="part2-bot flex">
+                <a href="https://wa.me/7363834359?text=Hello%20I%20have%20a%20question%20about%20your%20service" target="_blank" class="mini-box">
+                    <h1>Talk with experts</h1>
+                    <p>Get expert advice now!</p>
+                    <i  style="font-size: 20px;" class="ri-arrow-down-wide-fill"></i>
+                </a>
+                <a href="/listprop" class="mini-box">
+                    <h1>List your property</h1>
+                    <p>Showcase your property today!</p>
+                    <i  style="font-size: 20px;" class="ri-arrow-down-wide-fill"></i>
+
+                </a>
+                <a href="/properties" class="mini-box">
+                    <h1>Listed properties</h1>
+                    <p>Explore available listings!</p>
+                    <i  style="font-size: 20px;" class="ri-arrow-down-wide-fill"></i>
+
+                </a>
+                <a href="/agentlist" class="mini-box">
+                    <h1>Find an agent</h1>
+                    <p>Connect with a top agent!</p>
+                    <i  style="font-size: 20px;" class="ri-arrow-down-wide-fill"></i>
+
+                </a>
+                    </div>
+    </section>
+
+    <%- include("../partials/footbar.ejs") %>
+</body>
+</html>
