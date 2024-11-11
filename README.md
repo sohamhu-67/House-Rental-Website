@@ -9,5 +9,6 @@ Backend: Node.js, Express.js
 Database: MySQL (with phpMyAdmin for easy management)
 
 Server: Apache
-
+Video Explanation :https://youtu.be/xipRE2-iPhA
+Project Report : https://docs.google.com/document/d/1c-_CaZtBVB_TSRINKfKRAF86pNAYxwXh3D2NQHD9DQQ/edit?usp=sharing 
 ![image](https://github.com/user-attachments/assets/fa936402-808c-42bf-bdeb-04946bd48c15)
