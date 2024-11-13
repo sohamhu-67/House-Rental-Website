@@ -9,9 +9,8 @@ Backend: Node.js, Express.js
 Database: MySQL (with phpMyAdmin for easy management)
 
 Server: Apache
-Video Explanation : https://youtu.be/xipRE2-iPhA
 
-Project Report : https://docs.google.com/document/d/1c-_CaZtBVB_TSRINKfKRAF86pNAYxwXh3D2NQHD9DQQ/edit?usp=sharing 
+Video Explanation & Project Report : https://github.com/sohamhu-67/House-Rental-Website/blob/main/Report%26Video 
 
 
 
